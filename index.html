@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Movies List</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    />
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="text-center display-4 mt-4">
+        <span class="text-primary"><i class="fas fa-book"></i> My Movies</span
+        >List
+      </h1>
+      <form id="movie-form">
+        <div class="form-group">
+          <label for="name">Movie Title:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Movie Title.."
+            id="title"
+            name="title"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Director:</label>
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Enter Director Movie.."
+            id="director"
+            name="director"
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">No°:</label>
+          <input type="number" class="form-control" id="no" name="no" />
+        </div>
+        <input type="submit" class="btn btn-primary btn-block" value="Add" />
+      </form>
+      <table class="table table-striped mt-4 table-hover">
+        <thead>
+          <tr>
+            <td>Title</td>
+            <td>Director</td>
+            <td>Title</td>
+          </tr>
+        </thead>
+        <tbody id="movies-list"></tbody>
+      </table>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
